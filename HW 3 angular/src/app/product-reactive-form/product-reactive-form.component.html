@@ -1,0 +1,21 @@
+<div>
+
+    <form [formGroup]="myForm" (ngSubmit)="addItem(myForm)" action="" method="post">
+        <div>
+            <input type="text" name="name" formControlName="name" placeholder="имя">
+        </div>
+
+       <div>
+        <input type="text" name="address" formControlName="address" placeholder="Адрес">
+       </div>
+       
+        <div>
+            <select name="selectedPurchase" id="" formControlName="purchase">
+                <option *ngFor="let pur of purchase" [value]="pur">{{pur}}</option>
+            </select>
+        </div>
+        
+        <input type="text" type="submit" value="Добавить">
+    </form>
+
+</div>
