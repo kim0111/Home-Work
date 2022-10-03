@@ -1,0 +1,40 @@
+<p>product-list works!</p>
+<div class="d-flex">
+    <div Class="me-5">
+        <h3>Обычная форма</h3>
+        <app-product-form (onAdd)="addItem($event)"></app-product-form>
+    </div>
+
+    <div>
+        <h3>Реактивная форма</h3>
+        <app-product-reactive-form (onAdd)="addItem($event)"></app-product-reactive-form>
+    </div>
+</div>
+
+
+<div>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Имя</th>
+                <th scope="col">Адрес</th>
+                <th scope="col">Купил</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let obj of someProducts">
+                <td>
+                    <p>{{obj.name}}</p>
+                </td>
+                <td>
+                    <p>{{obj.address}}</p>
+                </td>
+                <td>
+                    <p>{{obj.purchase}}</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>
