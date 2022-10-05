@@ -1,0 +1,10 @@
+<div *ngIf="product">
+    <div>
+        <div >
+            <h5 >{{product.title}}</h5>
+            <p class="card-text">{{product.description}}</p>
+            <p class="card-text">count: {{product.price}}</p>
+            <a routerLink="/products" routerLinkActive="active" class="card-link">Back</a>
+        </div>
+    </div>
+</div>
