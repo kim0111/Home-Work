@@ -1,0 +1,75 @@
+.post-item {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #3b7513;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+form {
+  margin: 10px;
+}
+
+input {
+  display: block;
+  height: 20px;
+  outline: none;
+  border: 1px solid #3b7513;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+button {
+  width: 70px;
+  height: 30px;
+  background-color: darkolivegreen;
+  color: white;
+  margin: 20px;
+  outline: none;
+  border: none;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: none;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+  padding: 30px;
+  background-color: white;
+  border-radius: 15px;
+  min-width: 300px;
+}
+
+.modal.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.current-page {
+  border: 2px solid black;
+}
+
+.post-enter {
+  opacity: 0;
+}
+.post-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+.post-exit {
+  opacity: 1;
+}
+.post-exit-active {
+  opacity: 0;
+  transition: opacity 500ms ease-in;
+}
